@@ -56,7 +56,7 @@ def readTask(Id):
         sys.exit(1)
         
     task = tasks[id-1]
-    print(f"ID: {task['ID']:<5}, Description: {task['Description']:<15}, Status: {task['Status']:<5}, Created at: {task['Created at']}, Modified at: {task['Modified at']}")
+    print(f"ID: {task['ID']:<5}, \nDescription: {task['Description']:<15}, \nStatus: {task['Status']:<5}, \nCreated at: {task['Created at']}, \nModified at: {task['Modified at']}\n")
     
 def deleteTask(id):
     with open(jsonFile, 'r') as file:
@@ -98,7 +98,7 @@ def markTask(id, status):
     
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Please Enter Valid Equation! (Python monttcli2 <Command> Operation)")
+        print("Please Enter Valid Equation! (Python minatt.py <Command> Operation)")
         sys.exit(1)
     
     if sys.argv[1] == "add":
