@@ -23,10 +23,14 @@ Clone the repository:
 sh
 Copy
 Edit
-git clone https://github.com/your-username/task-tracker.git
-cd task-tracker
+git clone https://github.com/MinaNadyFarag/Task_Tracker_cli.git
+cd the minatt,py path file
 Run the script with commands like:
-
+python minatt.py add Task1
+python minatt.py update <id> <status>
+python minatt.py listall
+python minatt.py read <id>
+python minatt.py delete <id>
 
 Contributions are welcome! Feel free to fork this repository, create a new branch, and submit a pull request.
 
